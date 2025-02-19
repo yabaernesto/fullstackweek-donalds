@@ -3,9 +3,9 @@ import { Input } from "@/components/ui/input";
 
 const ProductPage = () => {
   return (
-    <div className="">
+    <div className="p-5 border border-red-500 rounded-xl">
       <Button>FSW 7.0</Button>
-      <Input />
+      <Input placeholder="Bora fechar esse projeto!" />
     </div>
   );
 };
