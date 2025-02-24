@@ -30,6 +30,9 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const addProduct = (product: CartProduct) => {
+    // verificar se o produto ja esta no carrinho
+    // se estiver, aumente a sua quantidade
+    // se nao estiver, o adicone
     const productIsAlreadyOnTheCart = products.some(prevProduct => {
       return prevProduct.id === product.id;
     });
