@@ -53,7 +53,7 @@ const OrderList = ({ orders }: OrderListProps) => {
               ${
                 order.status === OrderStatus.FINISHED ? "bg-green-500 text-white"
                 : "bg-gray-200 text-gray-500"
-              }  
+              }
             `}>
               {getStatusLabel(order.status)}
             </div>
